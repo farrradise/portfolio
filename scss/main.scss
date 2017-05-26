@@ -81,8 +81,9 @@ $color-grey:rgb(57,57,54);
   }
 
   .apprentie {
-    letter-spacing: 6.5px;
-    padding-left: 0px;
+    letter-spacing: 5.5px;
+    // padding-left: 0px;
+    font-weight: bold;
     color: $color-orange;
   }
 
@@ -118,7 +119,7 @@ $color-grey:rgb(57,57,54);
 @media (min-width: 768px) {
 
   // mise en page du nav du pré accueil
-  nav {
+  .homepage nav {
     position: absolute;
     right: 25px;
     top: 10px;
@@ -131,6 +132,13 @@ $color-grey:rgb(57,57,54);
       justify-content: space-between;
       li {
         list-style-type: none!important;
+
+        .modal {
+          color: $color-orange;
+          text-align: center;
+          padding: auto 1em;
+          font-size: 0.9em!important;
+        }
         a {
           color: white;
         }

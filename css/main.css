@@ -48,8 +48,8 @@
     letter-spacing: 10px;
     padding-left: 4px; }
   .homepage .apprentie {
-    letter-spacing: 6.5px;
-    padding-left: 0px;
+    letter-spacing: 5.5px;
+    font-weight: bold;
     color: #ca4f00; }
   .homepage .interest {
     letter-spacing: -1px;
@@ -65,21 +65,26 @@
       letter-spacing: 2.5px; }
 
 @media (min-width: 768px) {
-  nav {
+  .homepage nav {
     position: absolute;
     right: 25px;
     top: 10px; }
-    nav ul {
+    .homepage nav ul {
       padding: 0;
       display: flex;
       font-size: 2em;
       width: 200px;
       justify-content: space-between; }
-      nav ul li {
+      .homepage nav ul li {
         list-style-type: none !important; }
-        nav ul li a {
+        .homepage nav ul li .modal {
+          color: #ca4f00;
+          text-align: center;
+          padding: auto 1em;
+          font-size: 0.9em !important; }
+        .homepage nav ul li a {
           color: white; }
-        nav ul li a:hover i, nav ul li a:focus i {
+        .homepage nav ul li a:hover i, .homepage nav ul li a:focus i {
           transform: scale(1.15);
           transition: 0.5s;
           color: white; } }

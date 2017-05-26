@@ -7,7 +7,106 @@ $color-orange:rgb(202,79,0);
 $color-grey:rgb(57,57,54);
 
 
+
+// Mise en page du pré-accueil -------------------------------------------------------
+
+// code font
+@font-face {
+  font-family: "logo";
+  src: url("../fonts/Monthoers.otf") format('otf');
+  src: url("../fonts/Monthoers.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "signature";
+  src: url("../fonts/Falconers.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "orange";
+  src: url("../fonts/orange.ttf") format('truetype');
+}
+
 .homepage {
-  background-color: $color-grey!important;
+  background-image: linear-gradient($color-grey, grey);
+  width: 100%;
+  height: 100vh;
+  // background-color: $color-grey;
   color: white;
+  font-family: arial;
+
+  h2:first-of-type {
+    line-height: 60px;
+    letter-spacing: -0.3px;
+    color: $color-orange;
+    // padding-left: 4px;
+  }
+
+  main a {
+    font-size: 50px;
+    margin-top: 25px;
+    text-decoration: none;
+    color: white;
+  }
+
+  main a:hover {
+    color: $color-orange;
+    // transform: scale(1.8);
+    -ms-transform: rotateX(180deg); /* IE 9 */
+    -webkit-transform: rotateX(180deg); /* Chrome, Safari, Opera */
+    transform: rotateX(180deg);
+    transition: 1s;
+  }
+
+  .sign {
+    font-family: "signature";
+    font-size: 100px;
+    line-height: 30px;
+    letter-spacing: 12px;
+  }
+
+  strong {
+    // color: $color-orange;
+  }
+
+  .orange {
+    font-family: "orange";
+    font-size: 50px;
+    padding: 0;
+    line-height: 50px;
+    letter-spacing: 4px;
+    font-variant-caps: small-caps;
+  }
+
+  .orange2 {
+    color: $color-orange;
+    letter-spacing: 10px;
+    padding-left: 4px;
+  }
+
+  .apprentie {
+    letter-spacing: 6.5px;
+    padding-left: 0px;
+    color: $color-orange;
+  }
+
+  .interest {
+    letter-spacing: -1px;
+    line-height: 40px;
+    margin-left: 0px;
+    position: relative;
+    top: -5px;
+  }
+
+  h1 {
+   font-family: "logo";
+   line-height: 55px;
+   font-size: 5em;
+
+   span {
+     letter-spacing: 2.5px;
+   }
+
+  }
+
 }

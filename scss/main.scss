@@ -28,18 +28,19 @@ $color-grey:rgb(57,57,54);
 }
 
 .homepage {
-  background-image: linear-gradient($color-grey, grey);
+  background-image: linear-gradient($color-grey, Dimgray);
   width: 100%;
   height: 100vh;
-  // background-color: $color-grey;
   color: white;
   font-family: arial;
 
+
+
+  // mise en page du main
   h2:first-of-type {
     line-height: 60px;
-    letter-spacing: -0.3px;
+    letter-spacing: -2px;
     color: $color-orange;
-    // padding-left: 4px;
   }
 
   main a {
@@ -51,11 +52,10 @@ $color-grey:rgb(57,57,54);
 
   main a:hover {
     color: $color-orange;
-    // transform: scale(1.8);
     -ms-transform: rotateX(180deg); /* IE 9 */
     -webkit-transform: rotateX(180deg); /* Chrome, Safari, Opera */
     transform: rotateX(180deg);
-    transition: 1s;
+    transition: 1.3s;
   }
 
   .sign {
@@ -63,10 +63,6 @@ $color-grey:rgb(57,57,54);
     font-size: 100px;
     line-height: 30px;
     letter-spacing: 12px;
-  }
-
-  strong {
-    // color: $color-orange;
   }
 
   .orange {
@@ -107,6 +103,45 @@ $color-grey:rgb(57,57,54);
      letter-spacing: 2.5px;
    }
 
+  }
+
+}
+
+
+// __________________________________
+//
+//
+//          MODE TABLETTE
+//
+// __________________________________
+
+@media (min-width: 768px) {
+
+  // mise en page du nav du pré accueil
+  nav {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+
+    ul {
+      padding: 0;
+      display: flex;
+      font-size: 2em;
+      width: 200px;
+      justify-content: space-between;
+      li {
+        list-style-type: none!important;
+        a {
+          color: white;
+        }
+
+        a:hover i, a:focus i {
+          transform: scale(1.15);
+          transition: 0.5s;
+          color: white;
+        }
+      }
+    }
   }
 
 }

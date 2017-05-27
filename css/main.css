@@ -88,7 +88,16 @@ body > nav {
 
 .excepthome main {
   position: relative;
-  top: 110px; }
+  top: 110px;
+  text-align: justify;
+  width: 90%;
+  margin: auto; }
+
+.excepthome .parallax {
+  overflow-x: hidden !important;
+  position: relative;
+  min-width: 112%;
+  left: -6%; }
 
 @media (min-width: 768px) {
   .homepage nav {
@@ -115,16 +124,26 @@ body > nav {
           transition: 0.5s;
           color: white; }
 
-  .excepthome .present .parallax {
-    /* The image used */
-    background-image: url("../img/bg.jpg");
-    /* Full height */
-    height: 450px;
-    width: 100%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover; } }
+  .excepthome main {
+    position: relative;
+    top: 110px;
+    text-align: justify;
+    width: 90%;
+    margin: auto; }
+    .excepthome main .parallax {
+      /* The image used */
+      background-image: url("../img/bg.jpg");
+      /* Full height */
+      height: 450px;
+      width: 100%;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center top;
+      background-repeat: no-repeat; }
+
+  .excepthome .miseenpage {
+    width: 70%;
+    max-width: 700px;
+    margin: 0 auto 1em auto; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -64,6 +64,27 @@
     .homepage h1 span {
       letter-spacing: 2.5px; }
 
+body > nav {
+  position: fixed;
+  opacity: 0.7;
+  z-index: 4; }
+  body > nav button {
+    position: relative;
+    top: 22px;
+    border: none !important; }
+  body > nav h1 {
+    font-family: "logo";
+    margin-top: 10px; }
+  body > nav ul {
+    margin-left: auto;
+    margin-right: 5%; }
+    body > nav ul .active a {
+      border-bottom: 2px solid white; }
+    body > nav ul .active a:hover {
+      border-bottom: 2px solid #ca4f00; }
+    body > nav ul a:hover {
+      color: #ca4f00 !important; }
+
 @media (min-width: 768px) {
   .homepage nav {
     position: absolute;

@@ -27,13 +27,17 @@ $color-grey:rgb(57,57,54);
   src: url("../fonts/orange.ttf") format('truetype');
 }
 
+// body {
+//   // font-family: sans-serif;
+//   // font-family: verdana;
+// }
+
 .homepage {
   background-image: linear-gradient($color-grey, Dimgray);
   width: 100%;
   height: 100vh;
   color: white;
   font-family: arial;
-
 
 
   // mise en page du main
@@ -43,14 +47,14 @@ $color-grey:rgb(57,57,54);
     color: $color-orange;
   }
 
-  main a {
+  .home a {
     font-size: 50px;
     margin-top: 25px;
     text-decoration: none;
     color: white;
   }
 
-  main a:hover {
+  .home a:hover {
     color: $color-orange;
     -ms-transform: rotateX(180deg); /* IE 9 */
     -webkit-transform: rotateX(180deg); /* Chrome, Safari, Opera */
@@ -112,37 +116,51 @@ $color-grey:rgb(57,57,54);
 // Mise en page de la navigatoin principale -------------------------------------------------------
 
 body > nav {
-  position: fixed;
-  opacity: 0.7;
+  position: fixed!important;
+  width: 100vw;
+  opacity: 0.9;
   z-index: 4;
+
   button {
     position: relative;
     top: 22px;
     border: none!important;
   }
+
   h1{
     font-family: "logo";
     margin-top: 10px;
     // margin-left: 4%;
   }
+
   ul {
     margin-left: auto;
     margin-right: 5%;
+
     .active a {
       border-bottom: 2px solid white;
     }
+
     .active a:hover {
       border-bottom: 2px solid $color-orange;
     }
+
     a:hover {
       color: $color-orange!important;
     }
   }
 }
 
+
+
+
+
 // Mise en page du présentation -------------------------------------------------------
 
-
+.excepthome main {
+  position: relative;
+  top: 110px;
+}
 
 
 // __________________________________
@@ -175,6 +193,7 @@ body > nav {
           padding: auto 1em;
           font-size: 0.9em!important;
         }
+
         a {
           color: white;
         }
@@ -187,5 +206,20 @@ body > nav {
       }
     }
   }
+
+  .excepthome .present .parallax {
+    /* The image used */
+    background-image: url('../img/bg.jpg');
+    /* Full height */
+    height: 450px;
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
 
 }

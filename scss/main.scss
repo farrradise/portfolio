@@ -109,7 +109,7 @@ $color-grey:rgb(57,57,54);
 
 
 
-// Mise en page de la navigatoin principale -------------------------------------------------------
+// Mise en page de la navigation principale -------------------------------------------------------
 
 body > nav {
   position: fixed!important;
@@ -185,7 +185,7 @@ body > nav {
     margin: 0 auto 1em auto;
     text-align: center!important;
     .carousel-item {
-      border-radius: 10px;
+      // mettre une photo ou un motif de fond géometrique
       background-color: $color-green;
       h3 {
         color: white;

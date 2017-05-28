@@ -114,7 +114,6 @@ body > nav {
   margin: 0 auto 1em auto;
   text-align: center !important; }
   .present .carousel .carousel-item {
-    border-radius: 10px;
     background-color: #00be65; }
     .present .carousel .carousel-item h3 {
       color: white;

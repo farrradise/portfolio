@@ -126,7 +126,6 @@ body > nav {
   h1{
     font-family: "logo";
     margin-top: 10px;
-    // margin-left: 4%;
   }
 
   ul {
@@ -159,12 +158,29 @@ body > nav {
   width: 90%;
   margin: auto;
 
+  h2 {
+    font-family: "logo";
+    font-size: 2.5em;
+    line-height: 50px;
+    border-bottom: 3px solid $color-orange;
+    color: $color-orange;
+  }
+  .resume img {
+    border: 3px solid $color-grey;
+    border-radius : 25px;
+    padding: 0;
+    filter: grayscale(70%);
+    -webkit-filter: grayscale(70%);
+    -moz-filter: grayscale(70%);
+    -ms-filter: grayscale(70%);
+    -o-filter: grayscale(70%);
+  }
 }
 
 .excepthome .parallax {
   overflow-x: hidden!important;
   position: relative;
-  min-width: 112%;
+  min-width: 111.60%;
   left: -6%;
 }
 
@@ -179,7 +195,14 @@ body > nav {
 //
 // __________________________________
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
+
+  .excepthome .resume img {
+    min-width: 150px!important;
+    max-width: 200px;
+    max-height: 200px;
+  }
+
 }
 
 
@@ -232,6 +255,14 @@ body > nav {
 
 
 
+  // mise en page de la navigation principale
+
+  .excepthome > nav h1 {
+    font-size: 3.3em;
+    margin: -10px 0;
+
+  }
+
   // mise en page de la page presentation
    .excepthome main {
       position: relative;
@@ -256,7 +287,7 @@ body > nav {
     }
 
   .excepthome .miseenpage {
-    width: 70%;
+    width: 75%;
     max-width: 700px;
     margin: 0 auto 1em auto;
   }

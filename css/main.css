@@ -92,13 +92,33 @@ body > nav {
   text-align: justify;
   width: 90%;
   margin: auto; }
+  .excepthome main h2 {
+    font-family: "logo";
+    font-size: 2.5em;
+    line-height: 50px;
+    border-bottom: 3px solid #ca4f00;
+    color: #ca4f00; }
+  .excepthome main .resume img {
+    border: 3px solid #393936;
+    border-radius: 25px;
+    padding: 0;
+    filter: grayscale(70%);
+    -webkit-filter: grayscale(70%);
+    -moz-filter: grayscale(70%);
+    -ms-filter: grayscale(70%);
+    -o-filter: grayscale(70%); }
 
 .excepthome .parallax {
   overflow-x: hidden !important;
   position: relative;
-  min-width: 112%;
+  min-width: 111.60%;
   left: -6%; }
 
+@media (min-width: 576px) {
+  .excepthome .resume img {
+    min-width: 150px !important;
+    max-width: 200px;
+    max-height: 200px; } }
 @media (min-width: 768px) {
   .homepage nav {
     position: absolute;
@@ -124,6 +144,10 @@ body > nav {
           transition: 0.5s;
           color: white; }
 
+  .excepthome > nav h1 {
+    font-size: 3.3em;
+    margin: -10px 0; }
+
   .excepthome main {
     position: relative;
     top: 110px;
@@ -142,7 +166,7 @@ body > nav {
       background-repeat: no-repeat; }
 
   .excepthome .miseenpage {
-    width: 70%;
+    width: 75%;
     max-width: 700px;
     margin: 0 auto 1em auto; } }
 

@@ -158,6 +158,28 @@ body > nav {
     transition: 0.5s;
     opacity: 1; }
 
+.contact {
+  padding-top: 10%; }
+  .contact ul {
+    list-style: none; }
+    .contact ul li {
+      margin-bottom: 1em;
+      width: auto;
+      text-align: center; }
+    .contact ul i {
+      font-size: 3.9em;
+      color: white;
+      width: 130px;
+      text-align: center;
+      height: 130px;
+      padding-top: 30px;
+      border-radius: 70px;
+      background: #393936; }
+      .contact ul i span {
+        display: none; }
+    .contact ul li:hover i {
+      color: #00be65; }
+
 @media (min-width: 576px) {
   .excepthome .resume img {
     min-width: 150px !important;
@@ -222,5 +244,11 @@ body > nav {
     .excepthome .miseenpage .carousel-item h3 {
       font-size: 1.7em;
       letter-spacing: 2px; } }
+@media (min-width: 992px) {
+  .contact li:hover {
+    margin-top: -15px;
+    transition: 0.3s; }
+    .contact li:hover i {
+      color: #00be65; } }
 
 /*# sourceMappingURL=main.css.map */

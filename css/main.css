@@ -18,6 +18,8 @@
     line-height: 60px;
     letter-spacing: -2px;
     color: #ca4f00; }
+  .homepage .home {
+    padding-left: 10% !important; }
   .homepage .home a {
     font-size: 50px;
     margin-top: 25px;

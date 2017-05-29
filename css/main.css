@@ -200,20 +200,20 @@ body > nav {
   margin-bottom: 3em; }
   .portfolio h2 {
     margin-bottom: 2em; }
-  .portfolio figure {
+  .portfolio .gallery {
     margin: 0 !important;
     margin: auto;
     overflow: hidden;
     text-align: center;
     padding: 0; }
-    .portfolio figure img {
+    .portfolio .gallery img {
       filter: grayscale(100%);
       -webkit-filter: grayscale(100%);
       -moz-filter: grayscale(100%);
       -ms-filter: grayscale(100%);
       -o-filter: grayscale(100%);
       width: 100%; }
-    .portfolio figure figcaption {
+    .portfolio .gallery figcaption {
       position: absolute;
       width: 100%;
       text-align: center;
@@ -222,10 +222,10 @@ body > nav {
       bottom: 10%;
       color: #ca4f00;
       background-color: none; }
-      .portfolio figure figcaption button {
+      .portfolio .gallery figcaption button {
         background-color: inherit;
         border: none; }
-  .portfolio figure:hover img {
+  .portfolio .gallery:hover img {
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
@@ -233,7 +233,7 @@ body > nav {
     -o-filter: grayscale(0%);
     transform: scale(1.15);
     transition: 0.2s; }
-  .portfolio figure:hover figcaption {
+  .portfolio .gallery:hover figcaption {
     opacity: 1;
     z-index: 3;
     -ms-transform: rotateX(160deg);
@@ -248,9 +248,12 @@ body > nav {
     min-width: 150px !important;
     max-width: 200px; }
 
-  .portfolio figure {
+  .portfolio .gallery {
     max-width: 650px; } }
 @media (min-width: 768px) {
+  .homepage .home {
+    padding-left: 0% !important; }
+
   .homepage nav {
     position: absolute;
     right: 25px;

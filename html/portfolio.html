@@ -47,17 +47,57 @@
 
         <h2 class="col-12 col-sm-8 offset-sm-2">Découvrez mes projets</h2>
 
-        <figure class="col-md-6 col-lg-4">
+        <figure class="gallery col-md-6 col-lg-4">
           <img src="../img/projets/projet6.png" alt="screenshot projet web">
           <figcaption>
-            <button data-toggle="modal" data-target="#myModal">
+            <button data-toggle="modal" data-target="#myModal1">
               +
             </button>
           </figcaption>
         </figure>
 
+        <!-- Modal 1 -->
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Archiduchesse</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div>
+                  <h6>Le projet</h6>
+                  <p>L'exercice consistait à reproduire le plus fidèlement possible le site de l'archiduchesse avec contraintes principales le respect du responsive et l'utilisation du framework bootstrap.</p>
+                </div>
+                <div>
+                  <h6 class="row">Objectifs</h6>
+                  <figure class="col-10 offset-1 row">
+                    <img class="col-4" src="../img/modal/copy.png" alt="icone reproduction">
+                    <img class="col-4" src="../img/modal/wireframes.png" alt="icone wireframes">
+                    <img class="col-4" src="../img/modal/responsive-design.png" alt="icone responsive">
+                    <figcaption>reproduction | mobile first | responsive | versioning</figcaption>
+                  </figure>
+                  <p></p>
+                </div>
+                <div>
+                  <!-- mettre visuel avec material io resized -->
+                  <h6>Visuels</h6>
+                  <p></p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn bg-inverse github"><a href="https://github.com/farrradise/archiduchesse">Le repo github</a></button>
+                <button type="button" class="btn gh-pages"><a href="https://farrradise.github.io/archiduchesse/">Le site</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fin du modal 1 -->
 
-        <figure class="col-md-6 col-lg-4">
+
+        <figure class="gallery col-md-6 col-lg-4">
           <img src="../img/projets/projet2.png" alt="">
           <figcaption>
             <button data-toggle="modal" data-target="#myModal">
@@ -66,7 +106,7 @@
           </figcaption>
         </figure>
 
-        <figure class="col-md-6 col-lg-4">
+        <figure class="gallery col-md-6 col-lg-4">
           <img src="../img/projets/projet3.png" alt="screenshot projet web">
           <figcaption>
             <button data-toggle="modal" data-target="#myModal">
@@ -75,7 +115,7 @@
           </figcaption>
         </figure>
 
-        <figure class="col-md-6 col-lg-4">
+        <figure class="gallery col-md-6 col-lg-4">
           <img src="../img/projets/projet4.png" alt="screenshot projet web">
           <figcaption>
             <button data-toggle="modal" data-target="#myModal">
@@ -84,7 +124,7 @@
           </figcaption>
         </figure>
 
-        <figure class="col-md-6 col-lg-4">
+        <figure class="gallery col-md-6 col-lg-4">
           <img src="../img/projets/projet5.png" alt="screenshot projet web">
           <figcaption>
             <button data-toggle="modal" data-target="#myModal">
@@ -95,7 +135,7 @@
 
 
 
-        <figure class="col-md-6 col-lg-4">
+        <figure class="gallery col-md-6 col-lg-4">
           <img src="../img/projets/projet1.png" alt="screenshot projet web">
           <figcaption>
             <button data-toggle="modal" data-target="#myModal">
@@ -106,40 +146,19 @@
 
 
 
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                ...
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
 
 
 
       <!-- ECRITURE PARTIE PRESENTATION -->
-      <div id="presentation" class="present">
+      <div class="present">
 
 
         <!-- pour la création d'un mini effet parallax -->
         <div class="hidden-sm-down parallax">
 
             <!-- y insérer un carousel  -->
-            <section class="row miseenpage carousel">
+            <section  id="presentation" class="row miseenpage carousel">
               <div id="row carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner" role="listbox">
                   <div class="carousel-item active">
@@ -172,7 +191,6 @@
             </div>
             <img class="col-6 offset-3 col-sm-4 offset-sm-0" src="../img/photodemoi.jpg" alt="photo de Farrah">
           </section>
-
 
 
           <!-- ajouter des cartes inspirations -->

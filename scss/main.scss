@@ -336,7 +336,7 @@ body > nav {
     margin-bottom: 2em;
   }
 
-  figure {
+  .gallery {
     margin: 0!important;
     margin:auto;
     overflow:hidden;
@@ -370,7 +370,7 @@ body > nav {
     }
   }
 
-  figure:hover {
+  .gallery:hover {
 
     img {
       filter: grayscale(0%);
@@ -391,6 +391,8 @@ body > nav {
       transition: 0.5s;
     }
   }
+
+  // mise en page du modal
 }
 
 
@@ -414,7 +416,7 @@ body > nav {
   // mise en page portfolio
   .portfolio {
 
-    figure {
+    .gallery {
       max-width: 650px;
 
     }
@@ -435,6 +437,11 @@ body > nav {
 @media (min-width: 768px) {
 
   // mise en page du nav du pré accueil
+
+  .homepage .home {
+    padding-left: 0%!important;
+  }
+
   .homepage nav {
     position: absolute;
     right: 25px;

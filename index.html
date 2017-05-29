@@ -22,13 +22,13 @@
         <ul>
           <li><a href="https://twitter.com/farrradise"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
           <li>
-            <a type="button" href="" data-toggle="modal" data-target="#modalmail">
+            <a role="dialog" data-toggle="modal" href="#" data-target="#modalmail">
               <i class="fa fa-envelope" aria-hidden="true"></i>
             </a>
             <!-- Modal -->
-            <div class="modal fade" id="modalmail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal fade" id="modalmail" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
               <div class="modal-dialog modal-sm" role="document">
-                  <div class="modal-content">
+                  <div id="exampleModal" class="modal-content">
                     <p>marzini.f@gmail.com</p>
                     <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
                       <!-- <span aria-hidden="true">&times;</span> -->
@@ -46,9 +46,16 @@
             <!-- Modal -->
             <div class="modal fade" id="modalphone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
               <div class="modal-dialog modal-sm" role="document">
-                  <div class="modal-content">
-                    <p>06.61.37.93.66</p>
-                  </div>
+                <div class="modal-header">
+
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+                <div class="modal-content">
+                  <p>06.61.37.93.66</p>
+                </div>
               </div>
             </div>
 

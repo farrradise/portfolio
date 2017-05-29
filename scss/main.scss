@@ -1,6 +1,6 @@
 // code couleur
 
-$color-green: rgb(0,190,101);
+$color-orange: rgb(0,190,101);
 $color-yellow: rgb(229,243,116);
 $color-pink:rgb(238,127,206);
 $color-orange:rgb(202,79,0);
@@ -125,7 +125,7 @@ body > nav {
 
   h1{
     font-family: "logo";
-    margin-top: 10px;
+    margin-top: 5px!important;
   }
 
   ul {
@@ -137,11 +137,11 @@ body > nav {
     }
 
     .active a:hover {
-      border-bottom: 2px solid $color-green;
+      border-bottom: 2px solid $color-orange;
     }
 
     a:hover {
-      color: $color-green!important;
+      color: $color-orange!important;
     }
   }
 }
@@ -160,10 +160,10 @@ body > nav {
 
   h2 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2em!important;
     letter-spacing: 3px;
     line-height: 60px;
-    border-bottom: 3px solid $color-green;
+    border-bottom: 3px solid $color-orange;
   }
 }
 
@@ -177,6 +177,7 @@ body > nav {
     max-height: 200px;
     box-shadow: 0px 2px 2px grey;
     padding: 0;
+    margin-bottom: 1em;
     filter: grayscale(70%);
     -webkit-filter: grayscale(70%);
     -moz-filter: grayscale(70%);
@@ -190,7 +191,7 @@ body > nav {
     text-align: center!important;
     .carousel-item {
       // mettre une photo ou un motif de fond géometrique
-      background-color: $color-green;
+      background-color: $color-orange;
       h3 {
         color: white;
         font-size: 1.1em;
@@ -289,10 +290,8 @@ body > nav {
 
   // quand hover sur les icones
     li:hover {
-      // position: relative;
-
       i{
-        color: $color-green;
+        color: $color-orange;
       }
 
       .fa-envelope, .fa-globe, .fa-phone {
@@ -304,7 +303,7 @@ body > nav {
         position: absolute;
         left: 0;
         font-size: 18px;
-        color: $color-green;
+        color: $color-orange;
         font-weight: bold;
         font-family: sans-serif;
         text-align: center;
@@ -476,7 +475,7 @@ body > nav {
       transition: 0.3s;
 
       i{
-        color: $color-green;
+        color: $color-orange;
       }
     }
   }

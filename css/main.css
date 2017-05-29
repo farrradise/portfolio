@@ -75,16 +75,16 @@ body > nav {
     border: none !important; }
   body > nav h1 {
     font-family: "logo";
-    margin-top: 10px; }
+    margin-top: 5px !important; }
   body > nav ul {
     margin-left: auto;
     margin-right: 5%; }
     body > nav ul .active a {
       border-bottom: 2px solid white; }
     body > nav ul .active a:hover {
-      border-bottom: 2px solid #00be65; }
+      border-bottom: 2px solid #ca4f00; }
     body > nav ul a:hover {
-      color: #00be65 !important; }
+      color: #ca4f00 !important; }
 
 .excepthome main {
   position: relative;
@@ -94,16 +94,17 @@ body > nav {
   margin: auto; }
   .excepthome main h2 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2em !important;
     letter-spacing: 3px;
     line-height: 60px;
-    border-bottom: 3px solid #00be65; }
+    border-bottom: 3px solid #ca4f00; }
 
 .present .resume img {
   border-radius: 3px;
   max-height: 200px;
   box-shadow: 0px 2px 2px grey;
   padding: 0;
+  margin-bottom: 1em;
   filter: grayscale(70%);
   -webkit-filter: grayscale(70%);
   -moz-filter: grayscale(70%);
@@ -114,7 +115,7 @@ body > nav {
   margin: 0 auto 1em auto;
   text-align: center !important; }
   .present .carousel .carousel-item {
-    background-color: #00be65; }
+    background-color: #ca4f00; }
     .present .carousel .carousel-item h3 {
       color: white;
       font-size: 1.1em;
@@ -174,7 +175,7 @@ body > nav {
       border-radius: 70px;
       background: #393936; }
     .contact ul li:hover i {
-      color: #00be65; }
+      color: #ca4f00; }
     .contact ul li:hover .fa-envelope, .contact ul li:hover .fa-globe, .contact ul li:hover .fa-phone {
       color: #393936; }
     .contact ul li:hover .fa::after {
@@ -182,7 +183,7 @@ body > nav {
       position: absolute;
       left: 0;
       font-size: 18px;
-      color: #00be65;
+      color: #ca4f00;
       font-weight: bold;
       font-family: sans-serif;
       text-align: center; }
@@ -267,6 +268,6 @@ body > nav {
     margin-top: -15px;
     transition: 0.3s; }
     .contact li:hover i {
-      color: #00be65; } }
+      color: #ca4f00; } }
 
 /*# sourceMappingURL=main.css.map */

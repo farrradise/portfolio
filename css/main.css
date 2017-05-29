@@ -194,6 +194,8 @@ body > nav {
 .portfolio {
   width: 100%;
   margin: auto !important; }
+  .portfolio h2 {
+    margin-bottom: 2em; }
   .portfolio figure {
     margin: 0 !important;
     margin: auto;
@@ -201,30 +203,36 @@ body > nav {
     text-align: center;
     padding: 0; }
     .portfolio figure img {
-      filter: grayscale(70%);
-      -webkit-filter: grayscale(70%);
-      -moz-filter: grayscale(70%);
-      -ms-filter: grayscale(70%);
-      -o-filter: grayscale(70%);
       width: 100%; }
     .portfolio figure figcaption {
       position: absolute;
       width: 100%;
       text-align: center;
       opacity: 0;
-      font-size: 4em;
-      top: 30%;
+      font-size: 100px;
+      bottom: 10%;
       color: #ca4f00;
       background-color: none; }
       .portfolio figure figcaption button {
         background-color: inherit;
         border: none; }
   .portfolio figure:hover img {
-    transform: scale(1.05);
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    transform: scale(1.15);
     transition: 0.2s; }
   .portfolio figure:hover figcaption {
     opacity: 1;
-    z-index: 3; }
+    z-index: 3;
+    -ms-transform: rotateX(160deg);
+    /* IE 9 */
+    -webkit-transform: rotateX(160deg);
+    /* Chrome, Safari, Opera */
+    transform: rotateX(160deg);
+    transition: 0.5s; }
 
 @media (min-width: 576px) {
   .excepthome .resume img {

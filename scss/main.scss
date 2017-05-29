@@ -323,9 +323,12 @@ body > nav {
 
 // mise en page portfolio
 .portfolio {
-
   width: 100%;
   margin: auto!important;
+
+  h2 {
+    margin-bottom: 2em;
+  }
 
   figure {
     margin: 0!important;
@@ -335,11 +338,6 @@ body > nav {
     padding: 0;
 
     img {
-      filter: grayscale(70%);
-      -webkit-filter: grayscale(70%);
-      -moz-filter: grayscale(70%);
-      -ms-filter: grayscale(70%);
-      -o-filter: grayscale(70%);
       width: 100%;
     }
 
@@ -348,8 +346,8 @@ body > nav {
       width: 100%;
       text-align: center;
       opacity: 0;
-      font-size: 4em;
-      top: 30%;
+      font-size: 100px;
+      bottom: 10%;
       color: $color-orange;
       background-color: none;
 
@@ -363,13 +361,22 @@ body > nav {
   figure:hover {
 
     img {
-      transform: scale(1.05);
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      transform: scale(1.15);
       transition: 0.2s;
     }
 
     figcaption {
       opacity: 1;
       z-index: 3;
+      -ms-transform: rotateX(160deg); /* IE 9 */
+      -webkit-transform: rotateX(160deg); /* Chrome, Safari, Opera */
+      transform: rotateX(160deg);
+      transition: 0.5s;
     }
   }
 }

@@ -185,21 +185,6 @@ body > nav {
     -o-filter: grayscale(70%);
     }
 
-  .carousel {
-    width: 100%;
-    margin: 0 auto 1em auto;
-    text-align: center!important;
-    .carousel-item {
-      // mettre une photo ou un motif de fond géometrique
-      background-color: $color-orange;
-      h3 {
-        color: white;
-        font-size: 1.1em;
-        letter-spacing: 2px;
-        margin: 30px auto;
-      }
-    }
-  }
 
   .interet {
     margin-top: 2em!important;
@@ -432,6 +417,7 @@ body > nav {
         position: relative;
         min-width: 111.60%;
         left: -6%;
+        padding-top: 15em;
       }
 
       .darkbg {
@@ -447,11 +433,27 @@ body > nav {
     margin: 0 auto 1em auto;
 
     .carousel-item h3 {
-      font-size: 1.7em;
+      font-size: 2.5em!important;
       letter-spacing: 2px;
     }
   }
 
+  .present .carousel {
+      width: 100%;
+      margin: 1em auto 1em auto;
+      text-align: center!important;
+      .carousel-item {
+        opacity: 0.6;
+        background-color: $color-orange;
+        h3 {
+          color: white;
+          // opacity: 2!important;
+          font-size: 1.1em;
+          letter-spacing: 2px;
+          margin: 30px auto;
+        }
+      }
+    }
 
 
 }

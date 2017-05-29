@@ -79,11 +79,12 @@ body > nav {
   body > nav ul {
     margin-left: auto;
     margin-right: 5%; }
-    body > nav ul .active a {
-      border-bottom: 2px solid white; }
-    body > nav ul .active a:hover {
-      border-bottom: 2px solid #ca4f00; }
+    body > nav ul a {
+      color: white !important;
+      font-weight: bold; }
     body > nav ul a:hover {
+      padding-bottom: 2px !important;
+      border-bottom: 2px solid #ca4f00;
       color: #ca4f00 !important; }
 
 .excepthome main {
@@ -189,13 +190,49 @@ body > nav {
       white-space: pre;
       font-size: 24.5px;
       top: 4px; }
-  .contact .portfolio {
-    margin-top: 3em !important; }
+
+.portfolio {
+  width: 100%;
+  margin: auto !important; }
+  .portfolio figure {
+    margin: 0 !important;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    padding: 0; }
+    .portfolio figure img {
+      filter: grayscale(70%);
+      -webkit-filter: grayscale(70%);
+      -moz-filter: grayscale(70%);
+      -ms-filter: grayscale(70%);
+      -o-filter: grayscale(70%);
+      width: 100%; }
+    .portfolio figure figcaption {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      opacity: 0;
+      font-size: 4em;
+      top: 30%;
+      color: #ca4f00;
+      background-color: none; }
+      .portfolio figure figcaption button {
+        background-color: inherit;
+        border: none; }
+  .portfolio figure:hover img {
+    transform: scale(1.05);
+    transition: 0.2s; }
+  .portfolio figure:hover figcaption {
+    opacity: 1;
+    z-index: 3; }
 
 @media (min-width: 576px) {
   .excepthome .resume img {
     min-width: 150px !important;
-    max-width: 200px; } }
+    max-width: 200px; }
+
+  .portfolio figure {
+    max-width: 650px; } }
 @media (min-width: 768px) {
   .homepage nav {
     position: absolute;

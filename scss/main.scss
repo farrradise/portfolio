@@ -133,15 +133,14 @@ body > nav {
     margin-left: auto;
     margin-right: 5%;
 
-    .active a {
-      border-bottom: 2px solid white;
-    }
+    a {
+      color: white!important;
+      font-weight: bold;
 
-    .active a:hover {
-      border-bottom: 2px solid $color-orange;
     }
-
     a:hover {
+      padding-bottom: 2px!important;
+      border-bottom: 2px solid $color-orange;
       color: $color-orange!important;
     }
   }
@@ -245,7 +244,7 @@ body > nav {
 
 
 
-// mise en page de contact.html
+// mise en page de contact
 
 .contact {
   padding-top: 10%;
@@ -318,12 +317,62 @@ body > nav {
 
   }
 
-  .portfolio {
-    margin-top: 3em!important;
-  }
 }
 
 
+
+// mise en page portfolio
+.portfolio {
+
+  width: 100%;
+  margin: auto!important;
+
+  figure {
+    margin: 0!important;
+    margin:auto;
+    overflow:hidden;
+    text-align: center;
+    padding: 0;
+
+    img {
+      filter: grayscale(70%);
+      -webkit-filter: grayscale(70%);
+      -moz-filter: grayscale(70%);
+      -ms-filter: grayscale(70%);
+      -o-filter: grayscale(70%);
+      width: 100%;
+    }
+
+    figcaption {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      opacity: 0;
+      font-size: 4em;
+      top: 30%;
+      color: $color-orange;
+      background-color: none;
+
+      button {
+        background-color: inherit;
+        border: none;
+      }
+    }
+  }
+
+  figure:hover {
+
+    img {
+      transform: scale(1.05);
+      transition: 0.2s;
+    }
+
+    figcaption {
+      opacity: 1;
+      z-index: 3;
+    }
+  }
+}
 
 
 
@@ -341,6 +390,19 @@ body > nav {
     max-width: 200px;
   }
 
+
+
+  // mise en page portfolio
+  .portfolio {
+
+    figure {
+      // border: 1px solid $color-grey;
+      // left: -3%;
+      // margin: auto;
+      max-width: 650px;
+
+    }
+  }
 }
 
 

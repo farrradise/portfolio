@@ -151,9 +151,10 @@ body > nav {
   padding-top: 10%; }
   .contact ul {
     margin-top: 3em;
+    padding-bottom: 6em !important;
     list-style: none; }
     .contact ul li {
-      margin-bottom: 1em;
+      margin-bottom: 2em;
       width: auto;
       text-align: center; }
     .contact ul i {
@@ -193,7 +194,8 @@ body > nav {
 
 .portfolio {
   width: 100%;
-  margin: auto !important; }
+  margin: auto;
+  margin-bottom: 3em; }
   .portfolio h2 {
     margin-bottom: 2em; }
   .portfolio figure {
@@ -203,6 +205,11 @@ body > nav {
     text-align: center;
     padding: 0; }
     .portfolio figure img {
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
       width: 100%; }
     .portfolio figure figcaption {
       position: absolute;
@@ -217,11 +224,11 @@ body > nav {
         background-color: inherit;
         border: none; }
   .portfolio figure:hover img {
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
     transform: scale(1.15);
     transition: 0.2s; }
   .portfolio figure:hover figcaption {
@@ -298,7 +305,7 @@ body > nav {
   .excepthome .miseenpage {
     width: 75%;
     max-width: 700px;
-    margin: 0 auto 1em auto; }
+    margin: 2em auto; }
     .excepthome .miseenpage .carousel-item h3 {
       font-size: 2.5em !important;
       letter-spacing: 2px; }
@@ -316,6 +323,8 @@ body > nav {
         letter-spacing: 2px;
         margin: 30px auto; } }
 @media (min-width: 992px) {
+  .contact li {
+    transition: 0.8s; }
   .contact li:hover {
     margin-top: -15px;
     transition: 0.3s; }

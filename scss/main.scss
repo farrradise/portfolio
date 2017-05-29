@@ -172,6 +172,7 @@ body > nav {
 // Mise en page de présentation -------------------------------------------------------
 
 .present {
+
   .resume img {
     border-radius : 3px;
     max-height: 200px;
@@ -251,10 +252,11 @@ body > nav {
 
   ul {
     margin-top: 3em;
+    padding-bottom: 6em!important;
     list-style: none;
 
     li {
-      margin-bottom: 1em;
+      margin-bottom: 2em;
       width: auto;
       text-align: center;
     }
@@ -324,7 +326,8 @@ body > nav {
 // mise en page portfolio
 .portfolio {
   width: 100%;
-  margin: auto!important;
+  margin: auto;
+  margin-bottom: 3em;
 
   h2 {
     margin-bottom: 2em;
@@ -338,6 +341,12 @@ body > nav {
     padding: 0;
 
     img {
+
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
       width: 100%;
     }
 
@@ -361,11 +370,11 @@ body > nav {
   figure:hover {
 
     img {
-      filter: grayscale(100%);
-      -webkit-filter: grayscale(100%);
-      -moz-filter: grayscale(100%);
-      -ms-filter: grayscale(100%);
-      -o-filter: grayscale(100%);
+      filter: grayscale(0%);
+      -webkit-filter: grayscale(0%);
+      -moz-filter: grayscale(0%);
+      -ms-filter: grayscale(0%);
+      -o-filter: grayscale(0%);
       transform: scale(1.15);
       transition: 0.2s;
     }
@@ -403,9 +412,6 @@ body > nav {
   .portfolio {
 
     figure {
-      // border: 1px solid $color-grey;
-      // left: -3%;
-      // margin: auto;
       max-width: 650px;
 
     }
@@ -505,7 +511,7 @@ body > nav {
   .excepthome .miseenpage {
     width: 75%;
     max-width: 700px;
-    margin: 0 auto 1em auto;
+    margin: 2em auto;
 
     .carousel-item h3 {
       font-size: 2.5em!important;
@@ -547,6 +553,9 @@ body > nav {
   // mise en page contact
   .contact {
 
+    li {
+      transition: 0.8s;
+    }
     li:hover {
       margin-top: -15px;
       transition: 0.3s;

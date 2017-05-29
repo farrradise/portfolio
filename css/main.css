@@ -93,9 +93,9 @@ body > nav {
   width: 90%;
   margin: auto; }
   .excepthome main h2 {
-    font-family: "signature";
     text-align: center;
-    font-size: 3.7em;
+    font-size: 2.5em;
+    letter-spacing: 3px;
     line-height: 60px;
     border-bottom: 3px solid #00be65; }
 
@@ -137,15 +137,13 @@ body > nav {
     padding: 0; }
     .present .interet figure figcaption {
       color: white;
-      font-weight: bold;
       opacity: 0;
       position: absolute;
       bottom: 5px;
-      font-variant-caps: small-caps;
       text-shadow: 0px 2px 3px dimgrey;
       width: 100%;
       text-align: center;
-      font-size: 2.8em; }
+      font-size: 2.5em; }
   .present .interet figure:hover img {
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
@@ -175,10 +173,30 @@ body > nav {
       padding-top: 30px;
       border-radius: 70px;
       background: #393936; }
-      .contact ul i span {
-        display: none; }
     .contact ul li:hover i {
       color: #00be65; }
+    .contact ul li:hover .fa-envelope, .contact ul li:hover .fa-globe, .contact ul li:hover .fa-phone {
+      color: #393936; }
+    .contact ul li:hover .fa::after {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      font-size: 18px;
+      color: #00be65;
+      font-weight: bold;
+      font-family: sans-serif;
+      text-align: center; }
+    .contact ul li:hover .fa-envelope::after {
+      content: "marzini.f\A@\A gmail.com";
+      white-space: pre; }
+    .contact ul li:hover .fa-globe::after {
+      content: "Lille";
+      top: 40px;
+      font-size: 30px; }
+    .contact ul li:hover .fa-phone::after {
+      content: "06\A 61\A 37\A 93\A 66";
+      white-space: pre;
+      top: 19px; }
 
 @media (min-width: 576px) {
   .excepthome .resume img {

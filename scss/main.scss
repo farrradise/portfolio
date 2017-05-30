@@ -176,22 +176,26 @@ body > nav {
 
 .present {
 
-  .resume img {
-    border-radius : 3px;
-    max-height: 200px;
-    box-shadow: 0px 2px 2px grey;
-    padding: 0;
-    margin-bottom: 1em;
-    filter: grayscale(70%);
-    -webkit-filter: grayscale(70%);
-    -moz-filter: grayscale(70%);
-    -ms-filter: grayscale(70%);
-    -o-filter: grayscale(70%);
+  .resume {
+
+    margin-top: 100px!important;
+
+     img {
+      border-radius : 3px;
+      max-height: 200px;
+      box-shadow: 0px 2px 2px grey;
+      padding: 0;
+      margin-bottom: 1em;
+      filter: grayscale(70%);
+      -webkit-filter: grayscale(70%);
+      -moz-filter: grayscale(70%);
+      -ms-filter: grayscale(70%);
+      -o-filter: grayscale(70%);
+      }
     }
 
 
   .interet {
-    margin-top: 2em!important;
 
     .darkbg {
       padding-top: 2em;
@@ -297,6 +301,7 @@ body > nav {
         font-weight: bold;
         font-family: sans-serif;
         text-align: center;
+        left: 9px;
       }
 
       .fa-envelope::after {
@@ -330,7 +335,7 @@ body > nav {
 .portfolio {
   width: 100%;
   margin: auto;
-  margin-bottom: 3em;
+  margin-bottom: 16em;
 
   h2 {
     margin-bottom: 2em;
@@ -393,7 +398,41 @@ body > nav {
   }
 
   // mise en page du modal
-  
+  > .modal {
+    .modal-header {
+      color: white;
+      background-color: $color-orange;
+
+      h5 {
+        font-weight: bold;
+        font-size: 2em;
+
+      }
+    }
+
+    .modal-body {
+
+      h6 {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: $color-orange;
+      }
+    }
+
+
+    .modal-footer {
+
+      .github {
+        color : white;
+      }
+
+      .gh-pages {
+        background-color: $color-orange;
+        color : white;
+
+      }
+    }
+  }
 }
 
 
@@ -565,7 +604,7 @@ body > nav {
   .contact {
 
     li {
-      transition: 0.8s;
+      transition: 0.4s;
     }
     li:hover {
       margin-top: -15px;

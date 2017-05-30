@@ -102,52 +102,52 @@ body > nav {
     line-height: 60px;
     border-bottom: 3px solid #ca4f00; }
 
-.present .resume img {
-  border-radius: 3px;
-  max-height: 200px;
-  box-shadow: 0px 2px 2px grey;
-  padding: 0;
-  margin-bottom: 1em;
-  filter: grayscale(70%);
-  -webkit-filter: grayscale(70%);
-  -moz-filter: grayscale(70%);
-  -ms-filter: grayscale(70%);
-  -o-filter: grayscale(70%); }
-.present .interet {
-  margin-top: 2em !important; }
-  .present .interet .darkbg {
-    padding-top: 2em; }
-    .present .interet .darkbg img {
-      width: 100%;
-      margin: 0 auto;
-      filter: grayscale(85%);
-      -webkit-filter: grayscale(85%);
-      -moz-filter: grayscale(85%);
-      -ms-filter: grayscale(85%);
-      -o-filter: grayscale(85%); }
-  .present .interet figure {
-    overflow: hidden;
-    padding: 0; }
-    .present .interet figure figcaption {
-      color: white;
-      opacity: 0;
-      position: absolute;
-      bottom: 5px;
-      text-shadow: 0px 2px 3px dimgrey;
-      width: 100%;
-      text-align: center;
-      font-size: 2.5em; }
-  .present .interet figure:hover img {
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-    -ms-filter: grayscale(0%);
-    -o-filter: grayscale(0%);
-    transform: scale(1.16);
-    transition: 0.5s; }
-  .present .interet figure:hover figcaption {
-    transition: 0.5s;
-    opacity: 1; }
+.present .resume {
+  margin-top: 100px !important; }
+  .present .resume img {
+    border-radius: 3px;
+    max-height: 200px;
+    box-shadow: 0px 2px 2px grey;
+    padding: 0;
+    margin-bottom: 1em;
+    filter: grayscale(70%);
+    -webkit-filter: grayscale(70%);
+    -moz-filter: grayscale(70%);
+    -ms-filter: grayscale(70%);
+    -o-filter: grayscale(70%); }
+.present .interet .darkbg {
+  padding-top: 2em; }
+  .present .interet .darkbg img {
+    width: 100%;
+    margin: 0 auto;
+    filter: grayscale(85%);
+    -webkit-filter: grayscale(85%);
+    -moz-filter: grayscale(85%);
+    -ms-filter: grayscale(85%);
+    -o-filter: grayscale(85%); }
+.present .interet figure {
+  overflow: hidden;
+  padding: 0; }
+  .present .interet figure figcaption {
+    color: white;
+    opacity: 0;
+    position: absolute;
+    bottom: 5px;
+    text-shadow: 0px 2px 3px dimgrey;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em; }
+.present .interet figure:hover img {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  transform: scale(1.16);
+  transition: 0.5s; }
+.present .interet figure:hover figcaption {
+  transition: 0.5s;
+  opacity: 1; }
 
 .contact {
   padding-top: 10%; }
@@ -179,7 +179,8 @@ body > nav {
       color: #ca4f00;
       font-weight: bold;
       font-family: sans-serif;
-      text-align: center; }
+      text-align: center;
+      left: 9px; }
     .contact ul li:hover .fa-envelope::after {
       content: "marzini.f\A@\A gmail.com";
       font-size: 20px;
@@ -197,7 +198,7 @@ body > nav {
 .portfolio {
   width: 100%;
   margin: auto;
-  margin-bottom: 3em; }
+  margin-bottom: 16em; }
   .portfolio h2 {
     margin-bottom: 2em; }
   .portfolio .gallery {
@@ -242,6 +243,21 @@ body > nav {
     /* Chrome, Safari, Opera */
     transform: rotateX(160deg);
     transition: 0.5s; }
+  .portfolio > .modal .modal-header {
+    color: white;
+    background-color: #ca4f00; }
+    .portfolio > .modal .modal-header h5 {
+      font-weight: bold;
+      font-size: 2em; }
+  .portfolio > .modal .modal-body h6 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ca4f00; }
+  .portfolio > .modal .modal-footer .github {
+    color: white; }
+  .portfolio > .modal .modal-footer .gh-pages {
+    background-color: #ca4f00;
+    color: white; }
 
 @media (min-width: 576px) {
   .excepthome .resume img {
@@ -329,7 +345,7 @@ body > nav {
         margin: 30px auto; } }
 @media (min-width: 992px) {
   .contact li {
-    transition: 0.8s; }
+    transition: 0.4s; }
   .contact li:hover {
     margin-top: -15px;
     transition: 0.3s; }

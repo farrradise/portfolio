@@ -175,12 +175,10 @@ body > nav {
     .contact ul li:hover .fa::after {
       width: 100%;
       position: absolute;
-      left: 0;
+      left: 0px;
       color: #ca4f00;
       font-weight: bold;
-      font-family: sans-serif;
-      text-align: center;
-      left: 9px; }
+      font-family: sans-serif; }
     .contact ul li:hover .fa-envelope::after {
       content: "marzini.f\A@\A gmail.com";
       font-size: 20px;
@@ -349,6 +347,8 @@ body > nav {
   .contact li:hover {
     margin-top: -15px;
     transition: 0.3s; }
+    .contact li:hover .fa::after {
+      left: 9px; }
     .contact li:hover i {
       color: #ca4f00; } }
 

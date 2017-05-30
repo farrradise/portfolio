@@ -296,12 +296,10 @@ body > nav {
       .fa::after {
         width: 100%;
         position: absolute;
-        left: 0;
+        left: 0px;
         color: $color-orange;
         font-weight: bold;
         font-family: sans-serif;
-        text-align: center;
-        left: 9px;
       }
 
       .fa-envelope::after {
@@ -610,6 +608,10 @@ body > nav {
       margin-top: -15px;
       transition: 0.3s;
 
+
+      .fa::after {
+        left: 9px;
+      }
       i{
         color: $color-orange;
       }

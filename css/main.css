@@ -219,8 +219,7 @@ body > nav {
       opacity: 0;
       font-size: 100px;
       bottom: 10%;
-      color: #ca4f00;
-      background-color: none; }
+      color: #ca4f00; }
       .portfolio .gallery figcaption button {
         background-color: inherit;
         border: none; }
@@ -283,7 +282,8 @@ body > nav {
         .homepage nav ul li .modal {
           color: #ca4f00;
           text-align: center;
-          padding: auto 1em;
+          padding-left: 1em;
+          padding-right: 1em;
           font-size: 0.9em !important; }
         .homepage nav ul li a {
           color: white; }
